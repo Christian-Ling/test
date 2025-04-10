@@ -37,7 +37,7 @@ class HashTable {
         // Hash Functions and Collision Handling
         int hash1(const string& key) const;
         int hash2(const string& key) const;  
-        int probe(int index, int i) const;   // COMPLETE THIS
+        int probe(int index, int i, const string& key) const;   // COMPLETE THIS
         void rehash(); // COMPLETE THIS
 
         // Helper functions
