@@ -179,10 +179,7 @@ bool HashTable::remove(const string& key) {
             break;
 
         case CHAINING_BST:
-            if (tableBST[index].remove(key)) {
-                elementCount--;
-                return true;
-            }
+            return (tableBST[index].remove(key));
             // complete this - use AVL remove method
             break;
 

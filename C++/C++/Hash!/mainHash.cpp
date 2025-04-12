@@ -1,5 +1,18 @@
 #include "hash.h"
 
+string methodToString(CollisionHandling method) {
+    switch (method) {
+        case CHAINING_VECTOR: return "Chaining (Vector)";
+        case CHAINING_LIST: return "Chaining (List)";
+        case CHAINING_BST: return "Chaining (BST / AVL)";
+        case LINEAR_PROBING: return "Linear Probing";
+        case QUADRATIC_PROBING: return "Quadratic Probing";
+        case DOUBLE_HASHING: return "Double Hashing";
+        default: return "Unknown Method";
+    }
+}
+
+
 int main() {
     srand(time(nullptr));
 
@@ -15,13 +28,24 @@ int main() {
         int numSearch = data.size() / 2;
         int numDelete = 0;
 
+
+
+      
         for (auto method : methods) {
             cout << "\n----------------------------------------" << endl;
-            cout << "Running benchmark for method: " << method << endl;
+            cout << "Running benchmark for method: " << methodToString(method) << endl;
             cout << "----------------------------------------" << endl;
 
+
+            
             HashTable table(100003, method);
+            cout << "Benchmarking with " << data.size() << " items..." << endl;
+
+
+
             table.benchmarkHashTable(table, data, numSearch, numDelete);
+
+
 
             cout << "\nStatistics for method: " << method << endl;
             table.displayStats(); // Display stats after the benchmark

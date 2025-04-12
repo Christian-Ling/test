@@ -48,5 +48,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "git.enableCommitSigning": false
+    "git.enableCommitSigning": false,
+    "C_Cpp.dimInactiveRegions": false
 }
