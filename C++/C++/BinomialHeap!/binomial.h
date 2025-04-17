@@ -36,7 +36,7 @@ class BinomialHeap
         void deleteMin();
         void deleteKey(int key);
         void decreaseKey(int oldKey, int newKey);
-        binomialNode* findNode(binomialNode* node, int key);
+        binomialNode* findNode(binomialNode* node, int key); //heaper function
 
         void printHeap();
         void printTree(binomialNode* node, int space);
