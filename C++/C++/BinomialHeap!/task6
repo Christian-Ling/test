@@ -1,0 +1,7 @@
+1.binomal heaps improve merge efficiency because when merging 2 binomial heaps, its like adding 2 binary numbers which is
+ O(logN) time. but binary is O(n) because it must be resturctered for a valid heaps
+
+2.the time complexity for all is O(logN) because of the rules
+
+3. we use binomial trees like linked lists because it makes it easier to merge trees and traaverse through it
+it alows for O(logN) time as well.
