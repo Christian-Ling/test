@@ -1,0 +1,9 @@
+1. The use of binomial heap improves the efficiency
+compared to a binary heap by a bit. For my program it shaves off half of the time needed. and for a lot of nodes it improves it by almost 5 times
+
+2. union find helps with improving the preformce of kruskals alforithm by 
+keeping track of the connected elements and improves time needed. 
+
+3. the timing for both is exponentially different. 
+when you have small nodes you only see the time run twice as fast. but with more nodes that changes exponentially.
+so the time complexity of kruskals is O(E log E) and the time complexity of prims is O(E + V log V).
