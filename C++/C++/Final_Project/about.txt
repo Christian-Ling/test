@@ -1,0 +1,7 @@
+For my final project, I will be making the text auto complete.
+ For this I used a splay tree that way it can find frequently used words effectively. 
+ I also used a red-black tree because all the words that can be used and are in the hard coded "dictionary"
+  are stored there. Then I will use an AVL tree because it will be stricter so it will be used
+ for commonly used words like and, an, the, what, etc. 
+ Finally I used a hash table for checking how many time the words have been used and if the next word is valid
+and spelled correctly.

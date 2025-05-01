@@ -1,6 +1,0 @@
-For my final project, I will be making the text auto complete. 
-For this I plan on using a splay tree because it can find frequently used words effectively. 
-I also plan on using a red-black tree because all the words that can be "completed" are stored there.
-Then I will use an  AVL tree because it will be stricter so it will be used for commonly used words. 
-Then I will use a hash table for checking how many time the words have been used and if the next word is valid
-and spelled correctly.
